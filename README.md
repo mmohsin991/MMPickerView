@@ -1,6 +1,5 @@
 # MMPickerView
 
-<img src="https://github.com/mmohsin991/MMPickerView/blob/master/MMPickerView.gif" alt="How to use">
 
 # Introduction: 
 MMPickerView use for pick the item from an array or select date using MMPickerView very easily.
