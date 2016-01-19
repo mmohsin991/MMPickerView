@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clipsSubviews="YES" contentMode="scaleToFill" id="iN0-l3-epB" customClass="MMPickerView" customModule="MMPickerViewExample" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="202"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IBg-mW-E5q">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="40"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hG3-J3-NNq">
+                            <rect key="frame" x="9" y="0.0" width="252" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="3On-Gw-tC3"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                            <color key="textColor" red="0.92549002170000005" green="0.11765000220000001" blue="0.2392199934" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zaf-fn-d2Q">
+                            <rect key="frame" x="0.0" y="39" width="310" height="1"/>
+                            <color key="backgroundColor" red="0.92549002170000005" green="0.11765000220000001" blue="0.2392199934" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="1J2-xM-RLP"/>
+                            </constraints>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Drl-5N-2qu">
+                            <rect key="frame" x="261" y="0.0" width="59" height="40"/>
+                            <color key="backgroundColor" red="0.92549002170000005" green="0.11765000220000001" blue="0.2392199934" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="kAz-yI-FW0"/>
+                                <constraint firstAttribute="width" constant="59" id="pZj-Wq-sWz"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                            <state key="normal" title="Button">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="5"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="doneBtn:" destination="iN0-l3-epB" eventType="touchUpInside" id="KZC-xd-0u8"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="hG3-J3-NNq" firstAttribute="leading" secondItem="IBg-mW-E5q" secondAttribute="leading" constant="9" id="0xK-73-3bh"/>
+                        <constraint firstAttribute="height" constant="40" id="Dfb-8z-YH7"/>
+                        <constraint firstAttribute="bottom" secondItem="Zaf-fn-d2Q" secondAttribute="bottom" id="EMs-0S-W60"/>
+                        <constraint firstAttribute="trailing" secondItem="Zaf-fn-d2Q" secondAttribute="trailing" constant="10" id="HIh-1x-5Zw"/>
+                        <constraint firstAttribute="trailing" secondItem="Drl-5N-2qu" secondAttribute="trailing" id="TKt-iC-xiI"/>
+                        <constraint firstItem="hG3-J3-NNq" firstAttribute="top" secondItem="IBg-mW-E5q" secondAttribute="top" id="Yje-av-HK7"/>
+                        <constraint firstItem="Drl-5N-2qu" firstAttribute="top" secondItem="IBg-mW-E5q" secondAttribute="top" id="hjn-Hp-Oow"/>
+                        <constraint firstItem="Drl-5N-2qu" firstAttribute="leading" secondItem="hG3-J3-NNq" secondAttribute="trailing" id="iqA-ql-CHS"/>
+                        <constraint firstItem="Zaf-fn-d2Q" firstAttribute="leading" secondItem="IBg-mW-E5q" secondAttribute="leading" id="lYF-q4-OEW"/>
+                    </constraints>
+                </view>
+                <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BOb-PS-QLf">
+                    <rect key="frame" x="0.0" y="40" width="320" height="162"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="162" id="Cjx-VG-zxX"/>
+                    </constraints>
+                </pickerView>
+                <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="xC1-QK-IXJ">
+                    <rect key="frame" x="0.0" y="40" width="320" height="162"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="162" id="c1k-YD-xJf"/>
+                    </constraints>
+                    <date key="date" timeIntervalSinceReferenceDate="474739873.81380802">
+                        <!--2016-01-17 16:11:13 +0000-->
+                    </date>
+                </datePicker>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="BOb-PS-QLf" firstAttribute="top" secondItem="IBg-mW-E5q" secondAttribute="bottom" id="13q-Lh-0cH"/>
+                <constraint firstItem="xC1-QK-IXJ" firstAttribute="top" secondItem="IBg-mW-E5q" secondAttribute="bottom" id="9fR-dE-Bhf"/>
+                <constraint firstAttribute="trailing" secondItem="IBg-mW-E5q" secondAttribute="trailing" id="DWR-N7-f4h"/>
+                <constraint firstAttribute="trailing" secondItem="BOb-PS-QLf" secondAttribute="trailing" id="EDW-23-AFA"/>
+                <constraint firstItem="xC1-QK-IXJ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Jk3-mA-Jyb"/>
+                <constraint firstItem="BOb-PS-QLf" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="LTb-11-FNu"/>
+                <constraint firstItem="IBg-mW-E5q" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Mdg-Qm-Lo1"/>
+                <constraint firstItem="IBg-mW-E5q" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="PJS-Ph-69T"/>
+                <constraint firstAttribute="trailing" secondItem="xC1-QK-IXJ" secondAttribute="trailing" id="Wmu-Hs-U32"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                    <integer key="value" value="5"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="btnDone" destination="Drl-5N-2qu" id="fGj-oh-HaF"/>
+                <outlet property="datePicker" destination="xC1-QK-IXJ" id="yLu-6Z-23Y"/>
+                <outlet property="lblTitle" destination="hG3-J3-NNq" id="byd-sd-7U1"/>
+                <outlet property="pickerView" destination="BOb-PS-QLf" id="IGS-rv-GqU"/>
+                <outlet property="underlineView" destination="Zaf-fn-d2Q" id="4jW-ZT-O5c"/>
+            </connections>
+            <point key="canvasLocation" x="156" y="449.5"/>
+        </view>
+    </objects>
+</document>

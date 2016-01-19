@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MMPickerViewExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I7H-qJ-1W0">
+                                <rect key="frame" x="49" y="77" width="222" height="38"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="222" id="Js2-DK-41b"/>
+                                    <constraint firstAttribute="height" constant="38" id="e7E-xO-ZNC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                                <state key="normal" title="Select Name">
+                                    <color key="titleColor" red="0.85825979429999999" green="0.098033743940000001" blue="0.23096531279999999" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="SelectName:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ufu-A8-MWG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Q8-ma-7TS">
+                                <rect key="frame" x="49" y="135" width="222" height="38"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="38" id="0gL-Nv-RR5"/>
+                                    <constraint firstAttribute="width" constant="222" id="Pbu-FQ-AyM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                                <state key="normal" title="Select Date Of Birth">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="SelecDOB:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tWq-sp-8lb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KQM-oZ-xZO">
+                                <rect key="frame" x="49" y="192" width="222" height="38"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="38" id="7vx-yo-bCU"/>
+                                    <constraint firstAttribute="width" constant="222" id="VUh-rd-YRp"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                                <state key="normal" title="Select Number">
+                                    <color key="titleColor" red="0.11765000220000001" green="0.60000002379999995" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="SelectNumber:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XBT-lJ-cQj"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5VX-X7-4wV">
+                                <rect key="frame" x="49" y="251" width="222" height="38"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="38" id="Doa-2x-c28"/>
+                                    <constraint firstAttribute="width" constant="222" id="Oup-0g-e1D"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                                <state key="normal" title="Select Time">
+                                    <color key="titleColor" red="0.78430998330000001" green="0.03136999905" blue="0.81176000829999995" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="SelectTime:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xK0-QG-od4"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="I7H-qJ-1W0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0dw-hL-mFg"/>
+                            <constraint firstItem="5VX-X7-4wV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3NW-W3-W3l"/>
+                            <constraint firstItem="KQM-oZ-xZO" firstAttribute="top" secondItem="5Q8-ma-7TS" secondAttribute="bottom" constant="19" id="S46-GF-ydq"/>
+                            <constraint firstItem="5Q8-ma-7TS" firstAttribute="top" secondItem="I7H-qJ-1W0" secondAttribute="bottom" constant="20" id="TlG-3r-g1J"/>
+                            <constraint firstItem="5VX-X7-4wV" firstAttribute="top" secondItem="KQM-oZ-xZO" secondAttribute="bottom" constant="21" id="gh0-Gj-c6S"/>
+                            <constraint firstItem="I7H-qJ-1W0" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="57" id="hyc-aS-gq8"/>
+                            <constraint firstItem="KQM-oZ-xZO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="sRz-Ki-QO1"/>
+                            <constraint firstItem="5Q8-ma-7TS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zq9-NY-H4m"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="btnDOB" destination="5Q8-ma-7TS" id="ixh-vj-cWX"/>
+                        <outlet property="btnName" destination="I7H-qJ-1W0" id="a8j-Vu-xny"/>
+                        <outlet property="btnNumber" destination="KQM-oZ-xZO" id="9Fu-B6-3Cy"/>
+                        <outlet property="btnTime" destination="5VX-X7-4wV" id="KeB-ZC-d3F"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="305" y="364"/>
+        </scene>
+    </scenes>
+</document>
