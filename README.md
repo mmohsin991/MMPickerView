@@ -23,7 +23,7 @@ Define the delegate methods of "MMPickerViewDelegate" as per your requirments.
     func titleForRowAtIndex(index : Int) -> String?    // Called every time for each item to set title.
     
 # Custumization:
-You can change the attibute of MMPickerView, it has the callback block where you have full access of UIPickerView,
+You can change the attribute of MMPickerView, it has the callback block where you have full access of UIPickerView,
 UIDatePicker, Title Lable of MMPickerView and Done Button of MMPickerView.
     
 Here is the Example code:
