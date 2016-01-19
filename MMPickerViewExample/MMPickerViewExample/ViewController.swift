@@ -137,7 +137,7 @@ class ViewController: UIViewController, MMPickerViewDelegate {
         self.selectedType = .SelectName
         MMPickerView.presentView(self, isDatePicker: false) { (titleLable, doneButton, pickerView, datePicker) -> Void in
             
-            titleLable.text = "Select Name Below"
+            titleLable.text = "Select the Name below"
             doneButton.setTitle("Done", forState: .Normal)
             
         }
@@ -167,7 +167,7 @@ class ViewController: UIViewController, MMPickerViewDelegate {
 
         MMPickerView.presentView(self, isDatePicker: false) { (titleLable, doneButton, pickerView, datePicker) -> Void in
             
-            titleLable.text = "Pick your favourite number"
+            titleLable.text = "Pick your favourite Number"
             doneButton.setTitle("Pick", forState: .Normal)
             
             doneButton.backgroundColor = self.greenColor
@@ -181,7 +181,7 @@ class ViewController: UIViewController, MMPickerViewDelegate {
         
         MMPickerView.presentView(self, isDatePicker: true) { (titleLable, doneButton, pickerView, datePicker) -> Void in
             
-            titleLable.text = "Pick your favourite number"
+            titleLable.text = "Pick the Time and Date"
             doneButton.setTitle("Pick", forState: .Normal)
             datePicker.datePickerMode = UIDatePickerMode.DateAndTime
             
